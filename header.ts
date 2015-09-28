@@ -17,6 +17,7 @@ module HeaderTS {
 	function updateScroll(): void {
 		prevScrollPos = scrollPos;
 		scrollPos = $(window).scrollTop();
+		var hidden: string = '-' + $(target).css('height');
 	};
 
 	function scrollingUp(): boolean {
